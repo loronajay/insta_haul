@@ -7,19 +7,18 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 Insta-Haul is a hauling business. This repo contains:
 - **brand/** — Logo and brand assets
 - **docs/** — Private local business documents (not committed to any remote)
-- **website/** — Frontend website (to be built)
+- **index.html / css/** — Website, served from repo root for GitHub Pages
 
-## Repo Structure (Planned)
+## Repo Structure
 
 ```
 brand/
   images/        # SVG logos and other brand assets
+css/
+  style.css      # All styles; CSS custom properties at :root
 docs/            # Private local documents — never commit sensitive content
-website/
-  index.html     # Homepage
-  css/
-    style.css    # All styles; CSS custom properties at :root
-  images/        # Web-optimized images (separate from brand source files)
+index.html       # Homepage (repo root, served by GitHub Pages)
+website/         # Original working copy — root files are the live version
 ```
 
 ## Current Priorities
@@ -32,17 +31,18 @@ website/
 - Colors: `--orange: #D94F00`, `--orange-mid: #F28C00`, `--yellow: #F5C200`, `--dark: #1A1A1A`
 - Font: `'Trebuchet MS', 'Franklin Gothic Medium', Arial, sans-serif`
 - Tagline: **FAST. RELIABLE. HAULING.**
-- `brand/images/insta_haul_logo.svg` — Full stacked logo
-- `brand/images/insta-haul-logo-small.svg` — Icon/horizontal lockup
+- `brand/images/insta_haul_logo.svg` — Stacked logo (icon + wordmark + tagline); `-haul` is white for use on dark backgrounds
+- `brand/images/insta-haul-logo-small.svg` — Horizontal lockup (small icon + wordmark); `-haul` is `#1A1A1A` for use on light backgrounds
 
 ## Website
 
 Plain HTML/CSS — no build step, no dependencies.
 
-- Entry point: `website/index.html`
-- Styles: `website/css/style.css` — CSS custom properties defined in `:root`
-- Images referenced via relative path `../brand/images/`
-- Open `website/index.html` directly in a browser to preview
+- Entry point: `index.html` (repo root)
+- Styles: `css/style.css` — CSS custom properties defined in `:root`
+- Images referenced via relative path `brand/images/`
+- Hosted on GitHub Pages at `loronajay.github.io/insta_haul`
+- Open `index.html` directly in a browser to preview locally
 
 **To add a new page:** copy `index.html`, adjust the `<nav>` active state and content. Shared styles live in `style.css`.
 
