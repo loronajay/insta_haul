@@ -1,0 +1,13 @@
+# Private local documents — never push to remote
+docs/
+
+# Local Claude memory
+memory/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
