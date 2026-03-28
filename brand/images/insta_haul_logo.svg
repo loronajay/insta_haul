@@ -1,92 +1,70 @@
-<svg width="100%" viewBox="0 0 680 480" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="150 15 380 360" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Icon gradient: orange-to-yellow (distinct from IG's pink-purple) -->
     <linearGradient id="ig1" x1="0" y1="1" x2="1" y2="0">
       <stop offset="0%" stop-color="#D94F00"/>
       <stop offset="50%" stop-color="#F28C00"/>
       <stop offset="100%" stop-color="#F5C200"/>
     </linearGradient>
-    <!-- Subtle inner glow for the icon bg -->
     <linearGradient id="ig2" x1="0" y1="1" x2="1" y2="0">
       <stop offset="0%" stop-color="#B84200"/>
       <stop offset="100%" stop-color="#E07A00"/>
     </linearGradient>
-    <!-- Truck body gradient -->
     <linearGradient id="truck-body" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
       <stop offset="100%" stop-color="#E8E8E8" stop-opacity="0.85"/>
     </linearGradient>
-    <!-- Truck cab gradient -->
     <linearGradient id="truck-cab" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#FFFFFF" stop-opacity="1"/>
       <stop offset="100%" stop-color="#D0D0D0" stop-opacity="0.9"/>
     </linearGradient>
   </defs>
 
-  <!-- ======================== ICON ======================== -->
-  <!-- Outer rounded square (IG-inspired shape) -->
-  <rect x="220" y="30" width="240" height="240" rx="56" fill="url(#ig1)" style="stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <!-- Subtle inner border ring (like IG's camera lens ring feel) -->
-  <rect x="232" y="42" width="216" height="216" rx="46" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="3" style="fill:none;stroke:rgba(255, 255, 255, 0.25);color:rgb(0, 0, 0);stroke-width:3px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- Icon background -->
+  <rect x="220" y="30" width="240" height="240" rx="56" fill="url(#ig1)"/>
+  <rect x="232" y="42" width="216" height="216" rx="46" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="3"/>
+  <rect x="255" y="65" width="170" height="170" rx="34" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="5"/>
 
-  <!-- Inner "viewfinder" frame (replaces IG's camera circle) — hexagonal-ish rounded rect -->
-  <rect x="255" y="65" width="170" height="170" rx="34" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="5" style="fill:none;stroke:rgba(255, 255, 255, 0.55);color:rgb(0, 0, 0);stroke-width:5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-
-  <!-- TRUCK ICON centered inside -->
   <!-- Truck cargo box -->
-  <rect x="268" y="115" width="104" height="68" rx="7" fill="url(#truck-body)" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" style="stroke:rgba(255, 255, 255, 0.4);color:rgb(0, 0, 0);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <rect x="268" y="115" width="104" height="68" rx="7" fill="url(#truck-body)" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
   <!-- Truck cab -->
-  <path d="M372 140 L372 183 L408 183 L408 163 Q408 140 388 140 Z" rx="6" fill="url(#truck-cab)" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" style="stroke:rgba(255, 255, 255, 0.4);color:rgb(0, 0, 0);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <path d="M372 140 L372 183 L408 183 L408 163 Q408 140 388 140 Z" fill="url(#truck-cab)" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
   <!-- Cab window -->
-  <path d="M376 147 L376 169 L401 169 L401 163 Q401 147 388 147 Z" fill="rgba(210,240,255,0.7)" style="fill:rgba(210, 240, 255, 0.7);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <!-- Truck undercarriage line -->
-  <line x1="268" y1="183" x2="408" y2="183" stroke="rgba(255,255,255,0.5)" stroke-width="2" style="fill:rgb(0, 0, 0);stroke:rgba(255, 255, 255, 0.5);color:rgb(0, 0, 0);stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <!-- Wheel wells -->
-  <circle cx="300" cy="191" r="14" fill="url(#ig2)" style="stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <circle cx="300" cy="191" r="8" fill="rgba(255,255,255,0.9)" style="fill:rgba(255, 255, 255, 0.9);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <circle cx="300" cy="191" r="3.5" fill="url(#ig2)" style="stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <path d="M376 147 L376 169 L401 169 L401 163 Q401 147 388 147 Z" fill="rgba(210,240,255,0.7)"/>
+  <!-- Undercarriage -->
+  <line x1="268" y1="183" x2="408" y2="183" stroke="rgba(255,255,255,0.5)" stroke-width="2"/>
+  <!-- Rear wheel -->
+  <circle cx="300" cy="191" r="14" fill="url(#ig2)"/>
+  <circle cx="300" cy="191" r="8" fill="rgba(255,255,255,0.9)"/>
+  <circle cx="300" cy="191" r="3.5" fill="url(#ig2)"/>
+  <!-- Front wheel -->
+  <circle cx="387" cy="191" r="14" fill="url(#ig2)"/>
+  <circle cx="387" cy="191" r="8" fill="rgba(255,255,255,0.9)"/>
+  <circle cx="387" cy="191" r="3.5" fill="url(#ig2)"/>
+  <!-- Speed lines -->
+  <line x1="278" y1="135" x2="265" y2="135" stroke="rgba(255,255,255,0.5)" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="278" y1="143" x2="260" y2="143" stroke="rgba(255,255,255,0.4)" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="278" y1="151" x2="263" y2="151" stroke="rgba(255,255,255,0.3)" stroke-width="1.3" stroke-linecap="round"/>
+  <!-- Accent dot -->
+  <circle cx="387" cy="72" r="8" fill="rgba(255,255,255,0.85)"/>
+  <circle cx="387" cy="72" r="4" fill="url(#ig2)"/>
 
-  <circle cx="387" cy="191" r="14" fill="url(#ig2)" style="stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <circle cx="387" cy="191" r="8" fill="rgba(255,255,255,0.9)" style="fill:rgba(255, 255, 255, 0.9);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <circle cx="387" cy="191" r="3.5" fill="url(#ig2)" style="stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-
-  <!-- Speed lines on cargo box (dynamic/hauling feel) -->
-  <line x1="278" y1="135" x2="265" y2="135" stroke="rgba(255,255,255,0.5)" stroke-width="2.5" stroke-linecap="round" style="fill:rgb(0, 0, 0);stroke:rgba(255, 255, 255, 0.5);color:rgb(0, 0, 0);stroke-width:2.5px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <line x1="278" y1="143" x2="260" y2="143" stroke="rgba(255,255,255,0.4)" stroke-width="1.8" stroke-linecap="round" style="fill:rgb(0, 0, 0);stroke:rgba(255, 255, 255, 0.4);color:rgb(0, 0, 0);stroke-width:1.8px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <line x1="278" y1="151" x2="263" y2="151" stroke="rgba(255,255,255,0.3)" stroke-width="1.3" stroke-linecap="round" style="fill:rgb(0, 0, 0);stroke:rgba(255, 255, 255, 0.3);color:rgb(0, 0, 0);stroke-width:1.3px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-
-  <!-- Top-right dot (like IG's flash dot) — here: a tiny lightning bolt feel -->
-  <circle cx="387" cy="72" r="8" fill="rgba(255,255,255,0.85)" style="fill:rgba(255, 255, 255, 0.85);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <circle cx="387" cy="72" r="4" fill="url(#ig2)" style="stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-
-  <!-- ======================== WORDMARK ======================== -->
-  <!-- "insta" in bold -->
-  <text x="340" y="320" text-anchor="middle" font-family="'Trebuchet MS', 'Franklin Gothic Medium', sans-serif" font-size="54" font-weight="800" letter-spacing="-1" fill="#1A1A1A" style="fill:rgb(26, 26, 26);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Trebuchet MS&quot;, &quot;Franklin Gothic Medium&quot;, sans-serif;font-size:54px;font-weight:800;text-anchor:middle;dominant-baseline:auto">
-    <tspan fill="#D94F00" style="fill:rgb(217, 79, 0);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Trebuchet MS&quot;, &quot;Franklin Gothic Medium&quot;, sans-serif;font-size:54px;font-weight:800;text-anchor:middle;dominant-baseline:auto">insta</tspan><tspan fill="#1A1A1A" style="fill:rgb(26, 26, 26);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Trebuchet MS&quot;, &quot;Franklin Gothic Medium&quot;, sans-serif;font-size:54px;font-weight:800;text-anchor:middle;dominant-baseline:auto">-haul</tspan>
+  <!-- Wordmark -->
+  <text x="340" y="320"
+        text-anchor="middle"
+        font-family="'Trebuchet MS', 'Franklin Gothic Medium', Arial, sans-serif"
+        font-size="54"
+        font-weight="800"
+        letter-spacing="-1">
+    <tspan fill="#D94F00">insta</tspan><tspan fill="#1A1A1A">-haul</tspan>
   </text>
 
   <!-- Tagline -->
-  <text x="340" y="358" text-anchor="middle" font-family="'Trebuchet MS', Arial, sans-serif" font-size="15" letter-spacing="4" fill="#888" style="fill:rgb(136, 136, 136);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Trebuchet MS&quot;, Arial, sans-serif;font-size:15px;font-weight:400;text-anchor:middle;dominant-baseline:auto">
+  <text x="340" y="358"
+        text-anchor="middle"
+        font-family="'Trebuchet MS', Arial, sans-serif"
+        font-size="15"
+        letter-spacing="4"
+        fill="#888888">
     FAST. RELIABLE. HAULING.
-  </text>
-
-  <!-- ======================== VERSION 2: HORIZONTAL LOCKUP ======================== -->
-  <!-- Divider label -->
-  <text x="340" y="400" text-anchor="middle" font-family="'Trebuchet MS', Arial, sans-serif" font-size="11" fill="#bbb" letter-spacing="2" style="fill:rgb(187, 187, 187);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Trebuchet MS&quot;, Arial, sans-serif;font-size:11px;font-weight:400;text-anchor:middle;dominant-baseline:auto">— HORIZONTAL LOCKUP —</text>
-
-  <!-- Small icon -->
-  <rect x="100" y="415" width="52" height="52" rx="14" fill="url(#ig1)" style="stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <!-- Mini truck in small icon -->
-  <rect x="110" y="427" width="24" height="15" rx="2" fill="rgba(255,255,255,0.9)" style="fill:rgba(255, 255, 255, 0.9);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <path d="M134 432 L134 442 L143 442 L143 437 Q143 432 138 432 Z" fill="rgba(255,255,255,0.85)" style="fill:rgba(255, 255, 255, 0.85);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <circle cx="117" cy="444" r="3.5" fill="rgba(180,65,0,0.9)" style="fill:rgba(180, 65, 0, 0.9);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <circle cx="117" cy="444" r="1.5" fill="rgba(255,255,255,0.9)" style="fill:rgba(255, 255, 255, 0.9);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <circle cx="137" cy="444" r="3.5" fill="rgba(180,65,0,0.9)" style="fill:rgba(180, 65, 0, 0.9);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <circle cx="137" cy="444" r="1.5" fill="rgba(255,255,255,0.9)" style="fill:rgba(255, 255, 255, 0.9);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <circle cx="143" cy="427" r="2" fill="rgba(255,255,255,0.8)" style="fill:rgba(255, 255, 255, 0.8);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-
-  <!-- Horizontal wordmark -->
-  <text x="164" y="449" font-family="'Trebuchet MS', 'Franklin Gothic Medium', sans-serif" font-size="30" font-weight="800" letter-spacing="-0.5" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Trebuchet MS&quot;, &quot;Franklin Gothic Medium&quot;, sans-serif;font-size:30px;font-weight:800;text-anchor:start;dominant-baseline:auto">
-    <tspan fill="#D94F00" style="fill:rgb(217, 79, 0);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Trebuchet MS&quot;, &quot;Franklin Gothic Medium&quot;, sans-serif;font-size:30px;font-weight:800;text-anchor:start;dominant-baseline:auto">insta</tspan><tspan fill="#1A1A1A" style="fill:rgb(26, 26, 26);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Trebuchet MS&quot;, &quot;Franklin Gothic Medium&quot;, sans-serif;font-size:30px;font-weight:800;text-anchor:start;dominant-baseline:auto">-haul</tspan>
   </text>
 </svg>
