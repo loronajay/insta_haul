@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Insta-Haul — Fast. Reliable. Hauling.</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="logo" href="#">
+      <img src="brand/images/insta-haul-logo-small.svg" alt="Insta-Haul" />
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <img class="hero-logo" src="brand/images/insta_haul_logo.svg" alt="Insta-Haul" />
+    <h1>Hauling Done <span>Right</span></h1>
+    <p class="tagline">Fast. Reliable. Hauling.</p>
+    <a class="btn" href="#contact">Get a Quote</a>
+  </header>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <h2>What We <span>Haul</span></h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Junk Removal</h3>
+        <p>Furniture, appliances, yard waste — we load it and haul it away fast.</p>
+      </div>
+      <div class="service-card">
+        <h3>Moving Hauls</h3>
+        <p>Need a truck for moving day? We show up on time and get it done.</p>
+      </div>
+      <div class="service-card">
+        <h3>Delivery Runs</h3>
+        <p>Large item pickups and deliveries from stores, auctions, or private sellers.</p>
+      </div>
+      <div class="service-card">
+        <h3>Cleanouts</h3>
+        <p>Estate, garage, and storage unit cleanouts handled quickly and responsibly.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <div id="contact">
+    <div class="inner">
+      <h2>Get a <span>Quote</span></h2>
+      <p>Ready to haul? Reach out and we'll get back to you fast.</p>
+      <a class="btn" href="tel:">Call Us</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; <span id="year"></span> <span>Insta-Haul</span>. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    toggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+
+    // Close nav when a link is tapped
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
+</body>
+</html>
